@@ -393,7 +393,8 @@
         </div>
     </div>
 
-    <script>
+   <script>
+        // Функция отправки формы в WhatsApp
         function sendWhatsApp(event) {
             event.preventDefault();
             const from = document.getElementById('from-address').value.trim();
@@ -409,12 +410,30 @@
             window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
         }
 
+        // Функции для модальных окон
         function openModal(id) {
             document.getElementById(id).classList.remove('hidden');
         }
 
         function closeModal(id) {
             document.getElementById(id).classList.add('hidden');
+        }
+
+        // Управление мобильным меню (открытие/закрытие по клику на ☰)
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Автоматически закрывать меню при клике на любую ссылку в нем
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
         }
     </script>
 </body>
