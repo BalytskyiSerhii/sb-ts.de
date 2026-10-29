@@ -21,28 +21,42 @@
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-xs border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         
-        <!-- НОВЫЙ ЛОГОТИП С КАРТИНКОЙ -->
+        <!-- Логотип -->
         <a href="index.html" class="flex items-center">
-            <img src="logo_main.png" alt="S&B Transport & Service" class="h-16 w-auto object-contain">
+            <img src="logo_main.png" alt="S&B Transport & Service" class="h-14 sm:h-16 w-auto object-contain">
         </a>
 
-        <!-- Навигация по сайту (ПК версия) -->
+        <!-- Десктопное меню (показывается на ПК) -->
         <div class="hidden md:flex items-center space-x-6">
-            <a href="#about" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Über uns</a>
-            <a href="#rechner" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Preis anfragen</a>
-            <a href="#leistungen" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Leistungen</a>
-            <a href="#galerie" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Fotos</a>
-            <a href="#kontakt" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Kontakt</a>
+            <a href="index.html#about" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Über uns</a>
+            <a href="index.html#rechner" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Preis anfragen</a>
+            <a href="index.html#leistungen" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Leistungen</a>
+            <a href="portfolio.html" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Portfolio</a>
+            <a href="index.html#kontakt" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Kontakt</a>
         </div>
 
-        <!-- Кнопка связи / WhatsApp справа -->
+        <!-- Правая часть: WhatsApp и Мобильная кнопка ☰ -->
         <div class="flex items-center space-x-3">
-            <a href="https://wa.me/4917641482060" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium text-sm flex items-center gap-2 transition">
+            <a href="https://wa.me/4917641482060" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-medium text-sm flex items-center gap-2 transition">
                 <i class="fa-brands fa-whatsapp text-lg"></i>
                 <span class="hidden sm:inline">WhatsApp</span>
             </a>
+
+            <!-- Кнопка Гамбургер (только для мобильных) -->
+            <button id="mobile-menu-btn" aria-label="Menu öffnen" class="md:hidden p-2 text-slate-700 hover:text-blue-600 focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
         </div>
 
+    </div>
+
+    <!-- Выпадающее мобильное меню -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+        <a href="index.html#about" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Über uns</a>
+        <a href="index.html#rechner" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Preis anfragen</a>
+        <a href="index.html#leistungen" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Leistungen</a>
+        <a href="portfolio.html" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Portfolio</a>
+        <a href="index.html#kontakt" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600">Kontakt</a>
     </div>
 </header>
 
