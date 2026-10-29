@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S&B Transport & Service | Möbeltaxi, Umzüge & Transport in Gößweinstein</title>
     <meta name="description" content="Ihr zuverlässiges Möbeltaxi und Transportservice in Gößweinstein, Nürnberg, Erlangen, Bamberg, Bayreuth, Forchheim, Pegnitz. Umzüge, Möbelmontage & Entrümpelung.">
+    <link rel="icon" type="image/png" href="favicon.png">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- FontAwesome Icons -->
@@ -16,47 +17,34 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
-    <!-- Top Bar / Header -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-xs border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <!-- LOGO EXACT MATCH (Roof + S&B + Transport & Service) -->
-                <div class="flex items-center space-x-2.5">
-                    <div class="bg-blue-600 text-white p-2 rounded-xl shadow-md flex items-center justify-center">
-                        <svg class="w-8 h-8" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50 12 L12 42 H25 V78 H75 V42 H88 Z" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
-                            <rect x="41" y="26" width="18" height="18" fill="white" rx="3"/>
-                            <path d="M8 48 Q50 32 92 48" stroke="#93C5FD" stroke-width="5" fill="none"/>
-                            <path d="M25 85 H75" stroke="white" stroke-width="6" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <div class="flex items-center space-x-1">
-                            <span class="text-2xl font-black italic tracking-tighter text-slate-900">S<span class="text-blue-600">&</span>B</span>
-                        </div>
-                        <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 block leading-none">Transport & Service</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hidden md:flex items-center space-x-6">
-                <a href="#about" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Über uns</a>
-                <a href="#rechner" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Preis anfragen</a>
-                <a href="#leistungen" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Leistungen</a>
-                <a href="#galerie" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Fotos</a>
-                <a href="#kontakt" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Kontakt</a>
-            </div>
-            <div class="flex items-center space-x-3">
-                <a href="tel:+4917641482060" class="hidden sm:inline-flex items-center space-x-2 bg-slate-100 hover:bg-slate-200 text-slate-800 px-4 py-2 rounded-lg text-sm font-semibold transition border border-slate-200">
-                    <i class="fa-solid fa-phone text-blue-600"></i>
-                    <span>Anrufen</span>
-                </a>
-                <a href="https://wa.me/4917641482060?text=Hallo,%20ich%20brauche%20Hilfe%20beim%20Transport." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg text-sm font-semibold transition flex items-center space-x-2 shadow">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>WhatsApp</span>
-                </a>
-            </div>
+   <!-- Top Bar / Header -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-xs border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        
+        <!-- НОВЫЙ ЛОГОТИП С КАРТИНКОЙ -->
+        <a href="index.html" class="flex items-center">
+            <img src="logo_main.png" alt="S&B Transport & Service" class="h-16 w-auto object-contain">
+        </a>
+
+        <!-- Навигация по сайту (ПК версия) -->
+        <div class="hidden md:flex items-center space-x-6">
+            <a href="#about" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Über uns</a>
+            <a href="#rechner" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Preis anfragen</a>
+            <a href="#leistungen" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Leistungen</a>
+            <a href="#galerie" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Fotos</a>
+            <a href="#kontakt" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Kontakt</a>
         </div>
-    </header>
+
+        <!-- Кнопка связи / WhatsApp справа -->
+        <div class="flex items-center space-x-3">
+            <a href="https://wa.me/4917641482060" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium text-sm flex items-center gap-2 transition">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span class="hidden sm:inline">WhatsApp</span>
+            </a>
+        </div>
+
+    </div>
+</header>
 
     <!-- HERO SECTION WITH ELEGANT LIGHT TRANSPORT OVERLAY BACKGROUND -->
     <section class="relative py-16 lg:py-24 border-b border-slate-200 overflow-hidden bg-slate-900">
@@ -75,7 +63,7 @@
                         <i class="fa-solid fa-location-dot text-blue-400"></i>
                         <span>Gößweinstein & 50 km Umkreis (Nürnberg, Erlangen, Bamberg, Bayreuth, Forchheim)</span>
                     </span>
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-6 leading-tight">
+                    <h1 class="text-4xl sm:text-3xl lg:text-6xl font-black tracking-tight text-white mb-6 leading-tight">
                         Ihr zuverlässiges <span class="text-blue-400">Möbeltaxi</span> & Umzugsunternehmen
                     </h1>
                     <p class="text-lg text-slate-300 mb-8 leading-relaxed font-normal">
