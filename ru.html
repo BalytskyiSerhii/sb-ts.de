@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S&B Transport & Service | Грузовое такси, переезды и перевозки в Гёссвайнштайне</title>
+    <meta name="description" content="Надежное грузовое такси и транспортные услуги в Гёссвайнштайне, Нюрнберге, Эрлангене, Бамберге, Байройте, Форххайме. Переезды, сборка мебели и утилизация.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Скрытие скроллбара для чистого вида слайдера */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Header с переключателем языков -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-xs border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <a href="ru.html" class="flex items-center">
+                <img src="logo_main.png" alt="S&B Transport & Service" class="h-14 sm:h-16 w-auto object-contain">
+            </a>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="ru.html#about" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">О нас</a>
+                <a href="ru.html#rechner" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Узнать цену</a>
+                <a href="ru.html#leistungen" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Услуги</a>
+                <a href="portfolio.html" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Портфолио</a>
+                <a href="ru.html#bewertungen" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Отзывы</a>
+                <a href="ru.html#kontakt" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Контакты</a>
+            </div>
+
+            <div class="flex items-center space-x-3">
+                
+                <!-- Переключатель языков DE | RU | EN -->
+                <div class="flex items-center bg-slate-100 p-1 rounded-lg border border-slate-200 text-xs font-bold text-slate-600">
+                    <a href="index.html" class="px-2 py-1 hover:text-blue-600 transition">DE</a>
+                    <a href="ru.html" class="px-2 py-1 bg-white text-blue-600 rounded shadow-xs">RU</a>
+                    <a href="en.html" class="px-2 py-1 hover:text-blue-600 transition">EN</a>
+                </div>
+
+                <a href="https://wa.me/4917641482060" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-medium text-sm flex items-center gap-2 transition">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span class="hidden sm:inline">WhatsApp</span>
+                </a>
+
+                <button id="mobile-menu-btn" aria-label="Открыть меню" class="md:hidden p-2 text-slate-700 hover:text-blue-600 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="ru.html#about" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">О нас</a>
+            <a href="ru.html#rechner" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Узнать цену</a>
+            <a href="ru.html#leistungen" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Услуги</a>
+            <a href="portfolio.html" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Портфолио</a>
+            <a href="ru.html#bewertungen" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Отзывы</a>
+            <a href="ru.html#kontakt" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600">Контакты</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative py-16 lg:py-24 border-b border-slate-200 overflow-hidden bg-slate-900">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.pexels.com/photos/7464712/pexels-photo-7464712.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Транспортные услуги" class="w-full h-full object-cover object-center opacity-25 filter blur-[2px]">
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/75"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-white">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7">
+                    <span class="inline-flex items-center space-x-2 bg-blue-500/20 text-blue-300 border border-blue-400/30 px-3.5 py-1.5 rounded-full text-xs font-bold mb-6 backdrop-blur-md">
+                        <i class="fa-solid fa-location-dot text-blue-400"></i>
+                        <span>Гёссвайнштайн и радиус 50 км (Нюрнберг, Эрланген, Бамберг, Байройт, Форххайм)</span>
+                    </span>
+
+                    <h1 class="text-2xl sm:text-4xl lg:text-6xl font-black tracking-tight text-white mb-6 leading-tight break-words">
+                        Ваше надежное <span class="text-blue-400">грузовое такси</span> и переезды
+                    </h1>
+                    <p class="text-lg text-slate-300 mb-8 leading-relaxed font-normal">
+                        Профессиональные переезды, безопасная перевозка мебели, экспресс-доставка и утилизация. Пунктуально, аккуратно и по честным ценам во всей Франконии!
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-200 mb-8">
+                        <div class="flex items-center space-x-3 bg-slate-800/80 p-3 rounded-xl border border-slate-700/80 backdrop-blur-md shadow-sm">
+                            <i class="fa-solid fa-circle-check text-blue-400 text-lg"></i>
+                            <span class="font-semibold">Пунктуально и аккуратно</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-slate-800/80 p-3 rounded-xl border border-slate-700/80 backdrop-blur-md shadow-sm">
+                            <i class="fa-solid fa-circle-check text-blue-400 text-lg"></i>
+                            <span class="font-semibold">Работаем по выходным</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-slate-800/80 p-3 rounded-xl border border-slate-700/80 backdrop-blur-md shadow-sm">
+                            <i class="fa-solid fa-shield-halved text-blue-400 text-lg"></i>
+                            <span class="font-semibold">Ремни и защитные чехлы</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-slate-800/80 p-3 rounded-xl border border-slate-700/80 backdrop-blur-md shadow-sm">
+                            <i class="fa-solid fa-file-invoice text-blue-400 text-lg"></i>
+                            <span class="font-semibold">Официальный чек на месте</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Форма расчета -->
+                <div id="rechner" class="lg:col-span-5 bg-white text-slate-800 p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-2xl">
+                    <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
+                        <div>
+                            <h3 class="font-bold text-xl text-slate-900">Рассчитать перевозку</h3>
+                            <p class="text-xs text-blue-600 font-bold">Из точки А в точку Б</p>
+                        </div>
+                        <span class="bg-emerald-100 text-emerald-600 p-2.5 rounded-xl"><i class="fa-brands fa-whatsapp text-2xl"></i></span>
+                    </div>
+                    <form onsubmit="sendWhatsApp(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                                <i class="fa-solid fa-circle-dot text-blue-600 mr-1"></i> Откуда (Адрес погрузки / Точка А):
+                            </label>
+                            <input type="text" id="from-address" required placeholder="напр. IKEA Fürth или Nürnberger Str. 1" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-800 focus:outline-none focus:border-blue-600 focus:bg-white">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                                <i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i> Куда (Адрес выгрузки / Точка Б):
+                            </label>
+                            <input type="text" id="to-address" required placeholder="напр. Gößweinstein, Hauptstr. 10" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-800 focus:outline-none focus:border-blue-600 focus:bg-white">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                                <i class="fa-solid fa-boxes-packing mr-1 text-amber-500"></i> Что нужно перевезти?
+                            </label>
+                            <textarea id="cargo-desc" rows="3" required placeholder="напр. 3-местный диван, 1 стол, 4 стула, 10 коробок..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-800 focus:outline-none focus:border-blue-600 focus:bg-white"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 rounded-xl transition shadow-md flex items-center justify-center space-x-2 text-base cursor-pointer">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Отправить запрос в WhatsApp</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
+                <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Информация</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-1 mb-6">О нашей компании</h2>
+                
+                <p class="text-slate-800 text-lg leading-relaxed mb-4 font-semibold">
+                    Добро пожаловать в <span class="text-blue-600">S&B Transport & Service</span>!
+                </p>
+                <p class="text-slate-600 leading-relaxed mb-6">
+                    Мы предоставляем надежные и профессиональные услуги по перевозке грузов и переездам в Гёссвайнштайне и окрестностях 
+                    <span class="font-bold text-slate-800">(Нюрнберг, Эрланген, Бамберг, Байройт, Форххайм, Пегниц)</span>.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8 pt-6 border-t border-slate-100">
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-4 flex items-center space-x-2">
+                            <i class="fa-solid fa-list-check text-blue-600"></i>
+                            <span>Наши услуги:</span>
+                        </h3>
+                        <ul class="space-y-2.5 text-slate-700 text-sm font-medium">
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                                <span><strong>Переезды</strong> (частные и коммерческие)</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                                <span><strong>Грузовое такси</strong> (доставка из IKEA, Kleinanzeigen)</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                                <span><strong>Курьерские и экспресс-перевозки</strong></span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                                <span><strong>Утилизация</strong> и вывоз старой мебели</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-4 flex items-center space-x-2">
+                            <i class="fa-solid fa-star text-blue-600"></i>
+                            <span>Почему выбирают нас?</span>
+                        </h3>
+                        <ul class="space-y-2.5 text-slate-700 text-sm font-medium">
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                                <span>Пунктуальность и аккуратность</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                                <span>Работа в выходные дни</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                                <span>Профессиональное крепление грузов</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                                <span>Официальный чек на месте</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 border border-blue-100 p-4 rounded-xl text-center">
+                    <p class="text-blue-900 font-bold text-sm">
+                        Свяжитесь с нами для получения быстрого расчета!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="leistungen" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Услуги</span>
+                <h2 class="text-3xl font-black text-slate-900 mt-1">Безопасная доставка из А в Б</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Переезды</h3>
+                    <p class="text-slate-600 text-sm">Квартирные и офисные переезды без лишнего стресса.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Грузовое такси</h3>
+                    <p class="text-slate-600 text-sm">Доставка мебели и габаритных покупок до вашей двери.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Курьерская служба</h3>
+                    <p class="text-slate-600 text-sm">Срочная прямая доставка грузов по региону.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Утилизация</h3>
+                    <p class="text-slate-600 text-sm">Вывоз и правильная утилизация старой мебели и хлама.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Coverage Area -->
+    <section class="py-12 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-4">Зона обслуживания (радиус 50 км)</h3>
+            <div class="flex flex-wrap justify-center gap-2">
+                <span class="bg-white px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-700 border border-slate-200 shadow-xs">Гёссвайнштайн</span>
+                <span class="bg-white px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-700 border border-slate-200 shadow-xs">Нюрнберг</span>
+                <span class="bg-white px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-700 border border-slate-200 shadow-xs">Эрланген</span>
+                <span class="bg-white px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-700 border border-slate-200 shadow-xs">Бамберг</span>
+                <span class="bg-white px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-700 border border-slate-200 shadow-xs">Байройт</span>
+                <span class="bg-white px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-700 border border-slate-200 shadow-xs">Форххайм</span>
+                <span class="bg-white px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-700 border border-slate-200 shadow-xs">Пегниц</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- GOOGLE REVIEWS SLIDER SECTION (RUSSIAN) -->
+    <section id="bewertungen" class="py-16 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <div class="inline-flex items-center gap-2 bg-yellow-100 text-yellow-800 border border-yellow-300 px-4 py-1.5 rounded-full text-sm font-semibold mb-3">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <span>5.0 / 5.0 на Google Maps</span>
+                </div>
+                <h2 class="text-3xl font-black text-slate-900 tracking-tight">Отзывы наших клиентов</h2>
+                <p class="mt-2 text-slate-600 text-sm sm:text-base">Качественная перевозка, аккуратность и честные цены</p>
+            </div>
+
+            <!-- Slider -->
+            <div class="relative max-w-4xl mx-auto">
+                
+                <div id="review-slider" class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar pb-6 pt-2 px-2">
+                    
+                    <!-- Review 1 -->
+                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex text-yellow-400 text-xs gap-0.5">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Огромное спасибо Сергею и команде! 🚚💨 Нужно было срочно перевезти диван и кучу коробок, откликнулись моментально! Всё аккуратно упаковали. Ребята реально спасли! 👍🔥</p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                            <span class="font-bold text-xs text-slate-900">Александр В.</span>
+                            <span class="text-[10px] text-slate-400">Клиент</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex text-yellow-400 text-xs gap-0.5">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Отличный сервис. Приехали четко в условленное время, погрузили быстро, доставили без повреждений. Чек и документы дали на месте. Всё профессионально, 5/5. 🤝</p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                            <span class="font-bold text-xs text-slate-900">Michael K.</span>
+                            <span class="text-[10px] text-slate-400">Клиент</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex text-yellow-400 text-xs gap-0.5">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Заказывали переезд квартиры. За хрупкую мебель волновались, но ребята использовали мягкие чехлы и ремни, довезли всё в идеале! 🙏 Очень вежливые. ⭐️⭐️⭐️⭐️⭐️</p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                            <span class="font-bold text-xs text-slate-900">Tetiana Pavuk</span>
+                            <span class="text-[10px] text-slate-400">Local Guide</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex text-yellow-400 text-xs gap-0.5">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Долго искал нормальное Möbeltaxi по адекватным ценам. Ребята сделали отличную цену за доставку мебели из ИКЕИ! 📦 Занесли прямо на 3 этаж без лифта. Очень доволен! 📱💪</p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                            <span class="font-bold text-xs text-slate-900">Дмитрий М.</span>
+                            <span class="text-[10px] text-slate-400">Клиент</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 5 -->
+                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex text-yellow-400 text-xs gap-0.5">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Искал надежную доставку для дорогого гарнитура. Парни приехали со своими ремнями и защитными покрытиями. Все закрепили в фургоне на совесть 🚚. Отличная работа! 👌</p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                            <span class="font-bold text-xs text-slate-900">Thomas Schmidt</span>
+                            <span class="text-[10px] text-slate-400">Клиент</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 6 -->
+                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex text-yellow-400 text-xs gap-0.5">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Честно говоря, сначала сомневался, так как компания новая. Но всё прошло на высшем уровне! Пунктуальность 100%, ценник озвучили сразу и ничего не накрутили. 🤝🔥</p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                            <span class="font-bold text-xs text-slate-900">Игорь П.</span>
+                            <span class="text-[10px] text-slate-400">Клиент</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 7 -->
+                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex text-yellow-400 text-xs gap-0.5">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Нужна была срочная вылазка в выходной день! Сергей ответил сразу, через пару часов уже погрузили вещи. Ребята реально выручают в критический момент 🚀🙌</p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                            <span class="font-bold text-xs text-slate-900">Markus B.</span>
+                            <span class="text-[10px] text-slate-400">Клиент</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 8 -->
+                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex text-yellow-400 text-xs gap-0.5">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Все супер! Быстро, чисто, аккуратно и по нормальной цене. Однозначно рекомендую! 👍📦</p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                            <span class="font-bold text-xs text-slate-900">Андрей Г.</span>
+                            <span class="text-[10px] text-slate-400">Клиент</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 9 -->
+                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex text-yellow-400 text-xs gap-0.5">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Пользуемся услугами S&B уже не первый раз (перевозили шкаф, потом полный переезд). Как всегда — быстро, без нервов и качественно! Профи своего дела 💪🚚 ⭐⭐⭐⭐⭐</p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                            <span class="font-bold text-xs text-slate-900">Елена С.</span>
+                            <span class="text-[10px] text-slate-400">Постоянный клиент</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 10 -->
+                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex text-yellow-400 text-xs gap-0.5">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Большое человеческое спасибо за помощь с переездом и вывозом старой мебели! 🌸 Очень вежливые и культурные молодые люди. Всю тяжелую работу взяли на себя. ✨🙏</p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                            <span class="font-bold text-xs text-slate-900">Ольга Николаевна</span>
+                            <span class="text-[10px] text-slate-400">Клиент</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Arrow Buttons -->
+                <button id="slide-prev" aria-label="Предыдущий отзыв" class="absolute top-1/2 -left-3 sm:-left-5 -translate-y-1/2 bg-white hover:bg-slate-50 text-slate-800 p-3 rounded-full shadow-lg border border-slate-300 transition cursor-pointer focus:outline-none z-20">
+                    <i class="fa-solid fa-chevron-left text-base"></i>
+                </button>
+                <button id="slide-next" aria-label="Следующий отзыв" class="absolute top-1/2 -right-3 sm:-right-5 -translate-y-1/2 bg-white hover:bg-slate-50 text-slate-800 p-3 rounded-full shadow-lg border border-slate-300 transition cursor-pointer focus:outline-none z-20">
+                    <i class="fa-solid fa-chevron-right text-base"></i>
+                </button>
+            </div>
+
+            <!-- Google CTA Button -->
+            <div class="text-center mt-8">
+                <a href="https://g.page/r/CcL2ia6o5nkVEBM/review" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-white hover:bg-slate-50 text-slate-900 font-bold px-6 py-3.5 rounded-xl shadow-xs border border-slate-300 transition text-sm">
+                    <i class="fa-brands fa-google text-blue-600 text-lg"></i>
+                    <span>Оставить отзыв в Google</span>
+                </a>
+            </div>
+
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const slider = document.getElementById('review-slider');
+                const prevBtn = document.getElementById('slide-prev');
+                const nextBtn = document.getElementById('slide-next');
+
+                if (slider && prevBtn && nextBtn) {
+                    prevBtn.addEventListener('click', () => {
+                        slider.scrollBy({ left: -350, behavior: 'smooth' });
+                    });
+                    nextBtn.addEventListener('click', () => {
+                        slider.scrollBy({ left: 350, behavior: 'smooth' });
+                    });
+                }
+            });
+        </script>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontakt" class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <img src="favicon.png" alt="S&B Logo" class="h-10 w-10 object-contain rounded-full shadow-sm">
+                    <span class="text-xl font-black tracking-tight text-white">S&B Transport & Service</span>
+                </div>
+                <p class="text-sm mb-2">Переезды, грузовое такси, курьерские услуги и утилизация.</p>
+                <p class="text-xs text-blue-400 font-bold">Владелец: Сергей Балицкий</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Контакты</h4>
+                <p class="text-sm mb-2"><i class="fa-solid fa-location-dot text-blue-500 mr-2"></i> Behringersmühle 15, 91327 Gößweinstein</p>
+                <p class="text-sm mb-2"><i class="fa-solid fa-phone text-blue-500 mr-2"></i> <a href="tel:+4917641482060" class="hover:text-white">+49 176 41482060</a></p>
+                <p class="text-sm mb-2"><i class="fa-solid fa-envelope text-blue-500 mr-2"></i> <a href="mailto:balytskyiserhii@gmail.com" class="hover:text-white">balytskyiserhii@gmail.com</a></p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Правовая информация</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" onclick="openModal('impressum-modal'); return false;" class="hover:text-white transition">Выходные данные (Impressum)</a></li>
+                    <li><a href="#" onclick="openModal('datenschutz-modal'); return false;" class="hover:text-white transition">Конфиденциальность (Datenschutz)</a></li>
+                    <li class="text-xs text-blue-400 mt-2">Kleinunternehmer gemäß § 19 UStG</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+            &copy; 2026 Serhii Balytskyi S&B Transport & Service. Все права защищены.
+        </div>
+    </footer>
+
+    <!-- Impressum Modal -->
+    <div id="impressum-modal" class="fixed inset-0 z-50 hidden bg-black/70 flex items-center justify-center p-4">
+        <div class="bg-slate-900 text-white max-w-lg w-full p-6 rounded-2xl border border-slate-700 relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('impressum-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="text-xl font-bold mb-4 text-blue-400">Impressum</h3>
+            <div class="space-y-3 text-sm text-slate-300">
+                <p><strong>Angaben gemäß § 5 TMG / DDG:</strong></p>
+                <p>S&B Transport & Service<br>Inhaber: Serhii Balytskyi<br>Behringersmühle 15<br>91327 Gößweinstein<br>Deutschland</p>
+                <p><strong>Kontakt:</strong><br>Telefon: +49 176 41482060<br>E-Mail: balytskyiserhii@gmail.com</p>
+                <p><strong>Umsatzsteuer:</strong><br>Aufgrund des Kleinunternehmerstatus gem. § 19 UStG erheben wir keine Umsatzsteuer und weisen diese nicht aus.</p>
+                <p><strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</strong><br>Serhii Balytskyi<br>Behringersmühle 15<br>91327 Gößweinstein</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Datenschutz Modal -->
+    <div id="datenschutz-modal" class="fixed inset-0 z-50 hidden bg-black/70 flex items-center justify-center p-4">
+        <div class="bg-slate-900 text-white max-w-lg w-full p-6 rounded-2xl border border-slate-700 relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('datenschutz-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="text-xl font-bold mb-4 text-blue-400">Datenschutzerklärung</h3>
+            <div class="space-y-3 text-sm text-slate-300">
+                <p><strong>1. Datenschutz auf einen Blick</strong></p>
+                <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Verantwortlicher im Sinne der DSGVO ist Serhii Balytskyi (Behringersmühle 15, 91327 Gößweinstein, E-Mail: balytskyiserhii@gmail.com).</p>
+                <p><strong>2. Datenerfassung & Kontaktaufnahme</strong></p>
+                <p>Wenn Sie uns per WhatsApp oder Telefon kontaktieren, werden Ihre übermittelten Daten (z. B. Name, Start- und Zieladresse, Frachtangaben) ausschließlich zur Bearbeitung und Abwicklung Ihrer Transportanfrage gespeichert und verarbeitet.</p>
+                <p><strong>3. Ihre Rechte</strong></p>
+                <p>Sie haben jederzeit das Recht auf kostenlose Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger sowie den Zweck der Datenverarbeitung.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function sendWhatsApp(event) {
+            event.preventDefault();
+            const from = document.getElementById('from-address').value.trim();
+            const to = document.getElementById('to-address').value.trim();
+            const desc = document.getElementById('cargo-desc').value.trim();
+
+            let text = "Здравствуйте! У меня есть запрос на перевозку:%0a%0a";
+            text += "📍 *Откуда (Точка А):* " + encodeURIComponent(from) + "%0a";
+            text += "🏁 *Куда (Точка Б):* " + encodeURIComponent(to) + "%0a";
+            text += "📦 *Мебель / Груз:* " + encodeURIComponent(desc);
+
+            const phone = "4917641482060";
+            window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+        }
+
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+        }
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
