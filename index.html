@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,23 +20,20 @@
     <!-- Header -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-xs border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            
             <a href="index.html" class="flex items-center">
                 <img src="logo_main.png" alt="S&B Transport & Service" class="h-14 sm:h-16 w-auto object-contain">
             </a>
 
-            <div class="hidden md:flex items-center space-x-6">
-                <a href="index.html#about" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Über uns</a>
-                <a href="index.html#rechner" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Preis anfragen</a>
-                <a href="index.html#leistungen" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Leistungen</a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#about" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Über uns</a>
+                <a href="#rechner" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Preis anfragen</a>
+                <a href="#leistungen" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Leistungen</a>
                 <a href="portfolio.html" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Portfolio</a>
-                <a href="index.html#bewertungen" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Bewertungen</a>
-                <a href="index.html#kontakt" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Kontakt</a>
-            </div>
+                <a href="#bewertungen" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Bewertungen</a>
+                <a href="#kontakt" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Kontakt</a>
+            </nav>
 
             <div class="flex items-center space-x-3">
-                
-                <!-- Sprachumschalter DE | RU | EN -->
                 <div class="flex items-center bg-slate-100 p-1 rounded-lg border border-slate-200 text-xs font-bold text-slate-600">
                     <a href="index.html" class="px-2 py-1 bg-white text-blue-600 rounded shadow-xs">DE</a>
                     <a href="ru.html" class="px-2 py-1 hover:text-blue-600 transition">RU</a>
@@ -52,16 +49,15 @@
                     <i class="fa-solid fa-bars text-2xl"></i>
                 </button>
             </div>
-
         </div>
 
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
-            <a href="index.html#about" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Über uns</a>
-            <a href="index.html#rechner" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Preis anfragen</a>
-            <a href="index.html#leistungen" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Leistungen</a>
+            <a href="#about" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Über uns</a>
+            <a href="#rechner" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Preis anfragen</a>
+            <a href="#leistungen" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Leistungen</a>
             <a href="portfolio.html" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Portfolio</a>
-            <a href="index.html#bewertungen" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Bewertungen</a>
-            <a href="index.html#kontakt" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600">Kontakt</a>
+            <a href="#bewertungen" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600 border-b border-slate-100">Bewertungen</a>
+            <a href="#kontakt" class="block py-2 text-base font-medium text-slate-700 hover:text-blue-600">Kontakt</a>
         </div>
     </header>
 
@@ -81,10 +77,10 @@
                         <span>Gößweinstein & 50 km Umkreis (Nürnberg, Erlangen, Bamberg, Bayreuth, Forchheim)</span>
                     </span>
 
-                    <h1 class="text-2xl sm:text-4xl lg:text-6xl font-black tracking-tight text-white mb-6 leading-tight break-words">
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-6 leading-tight">
                         Ihr zuverlässiges <span class="text-blue-400">Möbeltaxi</span> & Umzüge
                     </h1>
-                    <p class="text-lg text-slate-300 mb-8 leading-relaxed font-normal">
+                    <p class="text-base sm:text-lg text-slate-300 mb-8 leading-relaxed">
                         Professionelle Umzüge, sicherer Möbeltransport, Kurierdienste und Entrümpelungen. Pünktlich, sorgfältig und zu fairen Preisen in ganz Franken!
                     </p>
 
@@ -169,22 +165,10 @@
                             <span>Unsere Leistungen:</span>
                         </h3>
                         <ul class="space-y-2.5 text-slate-700 text-sm font-medium">
-                            <li class="flex items-start space-x-2">
-                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
-                                <span><strong>Umzüge</strong> (Privat & Gewerbe)</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
-                                <span><strong>Möbeltaxi</strong> (IKEA & Kleinanzeigen Transport)</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
-                                <span><strong>Kurierdienste</strong> & Expressfahrten</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
-                                <span><strong>Entrümpelung</strong> & Möbelentsorgung</span>
-                            </li>
+                            <li class="flex items-start space-x-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i><span><strong>Umzüge</strong> (Privat & Gewerbe)</span></li>
+                            <li class="flex items-start space-x-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i><span><strong>Möbeltaxi</strong> (IKEA & Kleinanzeigen Transport)</span></li>
+                            <li class="flex items-start space-x-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i><span><strong>Kurierdienste</strong> & Expressfahrten</span></li>
+                            <li class="flex items-start space-x-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i><span><strong>Entrümpelung</strong> & Möbelentsorgung</span></li>
                         </ul>
                     </div>
 
@@ -194,22 +178,10 @@
                             <span>Warum Sie uns wählen:</span>
                         </h3>
                         <ul class="space-y-2.5 text-slate-700 text-sm font-medium">
-                            <li class="flex items-start space-x-2">
-                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
-                                <span>Pünktlich & Zuverlässig</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
-                                <span>Verfügbar am Wochenende</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
-                                <span>Sichere Ladungssicherung</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
-                                <span>Quittung direkt vor Ort</span>
-                            </li>
+                            <li class="flex items-start space-x-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i><span>Pünktlich & Zuverlässig</span></li>
+                            <li class="flex items-start space-x-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i><span>Verfügbar am Wochenende</span></li>
+                            <li class="flex items-start space-x-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i><span>Sichere Ladungssicherung</span></li>
+                            <li class="flex items-start space-x-2"><i class="fa-solid fa-check text-blue-600 mt-1"></i><span>Quittung direkt vor Ort</span></li>
                         </ul>
                     </div>
                 </div>
@@ -232,30 +204,22 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
-                        <i class="fa-solid fa-truck-fast"></i>
-                    </div>
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4"><i class="fa-solid fa-truck-fast"></i></div>
                     <h3 class="text-lg font-bold text-slate-900 mb-2">Umzüge</h3>
                     <p class="text-slate-600 text-sm">Wohnungs- und Firmenumzüge stressfrei und professionell.</p>
                 </div>
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
-                        <i class="fa-solid fa-couch"></i>
-                    </div>
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4"><i class="fa-solid fa-couch"></i></div>
                     <h3 class="text-lg font-bold text-slate-900 mb-2">Möbeltaxi</h3>
                     <p class="text-slate-600 text-sm">Direkttransport Ihrer Möbelkäufe bis in die Wohnung.</p>
                 </div>
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
-                        <i class="fa-solid fa-bolt"></i>
-                    </div>
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4"><i class="fa-solid fa-bolt"></i></div>
                     <h3 class="text-lg font-bold text-slate-900 mb-2">Kurierdienste</h3>
                     <p class="text-slate-600 text-sm">Schnelle und direkte Expressfahrten im Einsatzgebiet.</p>
                 </div>
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
-                        <i class="fa-solid fa-trash-can"></i>
-                    </div>
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4"><i class="fa-solid fa-trash-can"></i></div>
                     <h3 class="text-lg font-bold text-slate-900 mb-2">Entrümpelung</h3>
                     <p class="text-slate-600 text-sm">Fachgerechte Abholung und Entsorgung alter Möbel.</p>
                 </div>
@@ -282,7 +246,6 @@
     <!-- GOOGLE REVIEWS SLIDER SECTION (DEUTSCH) -->
     <section id="bewertungen" class="py-16 bg-slate-100 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
             <div class="text-center max-w-3xl mx-auto mb-10">
                 <div class="inline-flex items-center gap-2 bg-yellow-100 text-yellow-800 border border-yellow-300 px-4 py-1.5 rounded-full text-sm font-semibold mb-3">
                     <i class="fa-solid fa-star text-yellow-500"></i>
@@ -292,192 +255,9 @@
                 <p class="mt-2 text-slate-600 text-sm sm:text-base">Zuverlässiger Transport, Sorgfalt und faire Preise</p>
             </div>
 
-            <!-- Slider -->
             <div class="relative max-w-4xl mx-auto">
-                
                 <div id="review-slider" class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar pb-6 pt-2 px-2">
                     
                     <!-- Review 1 -->
                     <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
                         <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <div class="flex text-yellow-400 text-xs gap-0.5">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
-                            </div>
-                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Vielen Dank an Serhii und das Team! 🚚💨 Mussten spontan ein Sofa und Kisten transportieren. Alles perfekt verpackt, keine Kratzer. Sehr zu empfehlen! 👍🔥</p>
-                        </div>
-                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
-                            <span class="font-bold text-xs text-slate-900">Alexander W.</span>
-                            <span class="text-[10px] text-slate-400">Kunde</span>
-                        </div>
-                    </div>
-
-                    <!-- Review 2 -->
-                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <div class="flex text-yellow-400 text-xs gap-0.5">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
-                            </div>
-                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Hervorragender Service. Pünktlich auf die Minute, zügig geladen und ohne Schäden geliefert. Quittung direkt vor Ort. Sehr professionell, 5/5. 🤝</p>
-                        </div>
-                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
-                            <span class="font-bold text-xs text-slate-900">Michael K.</span>
-                            <span class="text-[10px] text-slate-400">Kunde</span>
-                        </div>
-                    </div>
-
-                    <!-- Review 3 -->
-                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <div class="flex text-yellow-400 text-xs gap-0.5">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
-                            </div>
-                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Wohnungsumzug gebucht. Hatten Sorge um empfindliche Möbel, aber die Jungs nutzten Decken und Gurte. Alles top angekommen! 🙏 Sehr freundlich. ⭐️⭐️⭐️⭐️⭐️</p>
-                        </div>
-                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
-                            <span class="font-bold text-xs text-slate-900">Tetiana Pavuk</span>
-                            <span class="text-[10px] text-slate-400">Local Guide</span>
-                        </div>
-                    </div>
-
-                    <!-- Review 4 -->
-                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <div class="flex text-yellow-400 text-xs gap-0.5">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
-                            </div>
-                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Günstiges Möbeltaxi gesucht und hier fündig geworden! 📦 Möbel von IKEA wurden schnell in den 3. Stock getragen. Super Preis-Leistungs-Verhältnis! 📱💪</p>
-                        </div>
-                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
-                            <span class="font-bold text-xs text-slate-900">Dmitri M.</span>
-                            <span class="text-[10px] text-slate-400">Kunde</span>
-                        </div>
-                    </div>
-
-                    <!-- Review 5 -->
-                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <div class="flex text-yellow-400 text-xs gap-0.5">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
-                            </div>
-                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Perfekt für wertvolle Möbelstücke. Eigene Gurte und Schutzdecken wurden mitgebracht. Alles sicher im Transporter fixiert 🚚. Klasse Arbeit! 👌</p>
-                        </div>
-                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
-                            <span class="font-bold text-xs text-slate-900">Thomas Schmidt</span>
-                            <span class="text-[10px] text-slate-400">Kunde</span>
-                        </div>
-                    </div>
-
-                    <!-- Review 6 -->
-                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <div class="flex text-yellow-400 text-xs gap-0.5">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
-                            </div>
-                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Erst war ich skeptisch, aber das Ergebnis hat voll überzeugt! 100% pünktlich, Festpreis eingehalten und keine versteckten Kosten. Top! 🤝🔥</p>
-                        </div>
-                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
-                            <span class="font-bold text-xs text-slate-900">Igor P.</span>
-                            <span class="text-[10px] text-slate-400">Kunde</span>
-                        </div>
-                    </div>
-
-                    <!-- Review 7 -->
-                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <div class="flex text-yellow-400 text-xs gap-0.5">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
-                            </div>
-                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Brauchte dringend am Wochenende Hilfe! Serhii hat sofort geantwortet und nach 2 Stunden war alles aufgeladen. Echte Lebensretter 🚀🙌</p>
-                        </div>
-                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
-                            <span class="font-bold text-xs text-slate-900">Markus B.</span>
-                            <span class="text-[10px] text-slate-400">Kunde</span>
-                        </div>
-                    </div>
-
-                    <!-- Review 8 -->
-                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <div class="flex text-yellow-400 text-xs gap-0.5">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
-                            </div>
-                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Alles super! Schnell, sauber, vorsichtig und zu einem fairen Preis. Klare Weiterempfehlung! 👍📦</p>
-                        </div>
-                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
-                            <span class="font-bold text-xs text-slate-900">Andreas G.</span>
-                            <span class="text-[10px] text-slate-400">Kunde</span>
-                        </div>
-                    </div>
-
-                    <!-- Review 9 -->
-                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <div class="flex text-yellow-400 text-xs gap-0.5">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
-                            </div>
-                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Schon mehrmals S&B gebucht (erst Schrank, dann kompletter Umzug). Wie immer: zügig, stressfrei und professionell! 💪🚚 ⭐⭐⭐⭐⭐</p>
-                        </div>
-                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
-                            <span class="font-bold text-xs text-slate-900">Elena S.</span>
-                            <span class="text-[10px] text-slate-400">Stammkunde</span>
-                        </div>
-                    </div>
-
-                    <!-- Review 10 -->
-                    <div class="snap-center shrink-0 w-[85%] sm:w-[45%] lg:w-[32%] bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <div class="flex text-yellow-400 text-xs gap-0.5">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <i class="fa-brands fa-google text-blue-500 text-base"></i>
-                            </div>
-                            <p class="text-slate-700 text-sm leading-relaxed mb-4">Vielen Dank für die tolle Hilfe beim Umzug und der Altmöbelentsorgung! 🌸 Sehr höfliche und kräftige junge Männer. ✨🙏</p>
-                        </div>
-                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
-                            <span class="font-bold text-xs text-slate-900">Olga N.</span>
-                            <span class="text-[10px] text-slate-400">Kundin</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Arrow Buttons -->
-                <button id="slide-prev" aria-label="Vorherige Bewertung" class="absolute top-1/2 -left-3 sm:-left-5 -translate-y-1/2 bg-white hover:bg-slate-50 text-slate-800 p-3 rounded-full shadow-lg border border-slate-300 transition cursor-pointer focus:outline-none z-20">
-                    <i class="fa-solid fa-chevron-left text-base"></i>
-                </button>
-                <button id="slide-next" aria-label="Nächste Bewertung" class="absolute top-1/2 -right-3 sm:-right-5 -translate-y-1/2 bg-white hover:bg-slate-50 text-slate-800 p-3 rounded-full shadow-lg border border-slate-300 transition cursor-pointer focus:outline-none z-20">
-                    <i class="fa-solid fa-chevron-right text-base"></i>
-                </button>
-            </div>
-
-            <!-- Google CTA Button -->
-            <div class="text-center mt-8">
-                <a href="https://g.page/r/CcL2ia6o5nkVEBM/review" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-white hover:bg-slate-50 text-slate-900 font-bold px-
